@@ -1,11 +1,11 @@
-.login-screen {
+.signup-screen {
     display: flex;
     height: 100vh;
     width: 100%;
     background-color: #fff;
   }
   
-.login-left {
+.signup-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
     color: #fff;
 }
 
-.login-logo {
+.signup-logo {
     margin: 0;
     font-size: 3em;
     letter-spacing: -1px;
@@ -29,7 +29,7 @@
     margin-top: 10px;
 }
 
-.login-right {
+.signup-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,34 +40,34 @@
 
 
 
-.login-right-content {
+.signup-right-content {
     text-align: left;
     width: 375px;
 }
 
-.login-right-header {
+.signup-right-header {
   font-size: 3em;
   margin-bottom: 45px;
 }
 
-.login-right-subheader {
+.signup-right-subheader {
     color: #8F8F8F;
     font-size: 1.6em;
     margin-bottom: 50px;
 }
 
-.login-right-footer {
+.signup-right-footer {
     margin-top: -3px;
   text-align: center;
   color: #8F8F8F;
   font-weight: 600;
 }
 
-.login-signup-link {
+.login-link {
     color: #023047;
   }
 
-.login-button {
+.signup-button {
     margin-top: 10px;
     width: 100%;
     padding: 10px;
@@ -81,7 +81,7 @@
     height: 3.5em;
 }
 
-.login-button:hover {
+.signup-button:hover {
     background-color: #e6b436;  
 }
 
@@ -120,9 +120,10 @@ a {
     color: #0077cc;
 }
 
-.login-welcome-text {
+.signup-welcome-text {
     text-align: left;
     font-size: 5.5rem;
+    /* line-height: 1.2em; */
     margin-top: 0;
     margin-bottom: 0.5em;
     width: 80%;
@@ -130,28 +131,34 @@ a {
     line-height: 65px;
 }
 
-@media screen and (max-width: 900px) {
-    .login-screen {
+@media screen and (max-width: 1272px) {
+    .signup-welcome-text {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .signup-screen {
       flex-direction: column;
     }
   
-    .login-left, .login-right {
+    .signup-left, .signup-right {
       width: 100%;
     }
 
-    .login-left {
+    .signup-left {
         padding-top: 120px;
     }
 
-    .login-right { 
+    .signup-right { 
         margin-top: 50px;
     }
 
-    .login-logo {
+    .signup-logo {
         font-size: 2em;
     }
 
-    .login-welcome-text {
+    .signup-welcome-text {
         font-size: 4rem;
         text-align: center;
     }

@@ -1,0 +1,116 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 20px;
+    height: 100vh;
+  }
+  
+  .left-pane {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .center-pane {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .right-pane {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .bottom-pane {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+   */
+
+   html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .nav-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .main {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .status-input {
+    display: flex;
+  }
+  
+  .status-input input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .status-input button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .status-input button:hover {
+    background-color: #333;
+  }
+  
+  
